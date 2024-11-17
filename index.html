@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ekwallegory Productions - Music, Videos, and Photos">
+  <title>Ekwallegory Productions</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="preload" as="video" href="assets/intro.mp4">
+</head>
+<body>
+  <div id="language-selector">
+    <select id="lang-select" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="zh">中文</option>
+      <option value="hi">हिंदी</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="ar">العربية</option>
+      <option value="ru">Русский</option>
+      <option value="nl">Nederlands</option>
+      <option value="pt">Português</option>
+      <option value="th">ไทย</option>
+      <option value="vi">Tiếng Việt</option>
+      <option value="tr">Türkçe</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+
+  <div id="intro-video">
+    <video autoplay loop muted playsinline poster="assets/poster.jpg">
+      <source src="assets/intro.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <nav class="main-nav">
+    <a href="/" class="active" data-i18n="nav.home">Home</a>
+    <a href="/music.html" data-i18n="nav.music">Music</a>
+    <a href="/photos.html" data-i18n="nav.photos">Photos</a>
+    <a href="/videos.html" data-i18n="nav.videos">Videos</a>
+    <a href="/events.html" data-i18n="nav.events">Events</a>
+  </nav>
+
+  <main>
+    <div class="content">
+      <h1 data-i18n="welcome">Welcome to Ekwallegory Productions</h1>
+      <div class="featured-content"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ekwallegory Productions</p>
+  </footer>
+
+  <script type="module" src="js/config.js"></script>
+  <script type="module" src="js/i18n.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
